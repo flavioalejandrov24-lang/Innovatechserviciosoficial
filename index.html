@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innotechnology</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- INICIO CONTENEDOR PRINCIPAL -->
+    <div class="contenedor-principal">
+      <!-- INICIO HEADER -->
+      <header
+        class="header-principal"
+        style="
+          background-image: url(Multimediaindex/header.png);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <!-- ➡️ Sustituir Multimediaindex/header.png por tu imagen local del header -->
+      </header>
+      <!-- FIN HEADER -->
+
+      <!-- INICIO MAIN -->
+      <main class="main-content">
+        <!-- INICIO TÍTULO PRINCIPAL -->
+        <div class="titulo-seccion">
+          <h2 class="titulo-servicios">NUESTROS SERVICIOS</h2>
+        </div>
+        <!-- FIN TÍTULO PRINCIPAL -->
+
+        <!-- INICIO GRID DE SERVICIOS -->
+        <div class="grid-servicios">
+          <!-- CARD SERVICIO 1 -->
+          <a href="Servicios.html" class="card-servicio">
+            <img
+              src="Multimediaindex/Reparacionespc.png"
+              alt="Servicio 1"
+              class="card-imagen"
+            />
+            <h3 class="card-titulo">Reparación de equipos de cómputo</h3>
+            <p class="card-descripcion">
+              Servicios integrales de reparación para computadoras.
+            </p>
+          </a>
+
+          <!-- CARD SERVICIO 2 -->
+          <a href="Diseños.html" class="card-servicio">
+            <img
+              src="Multimediaindex/Diseñosperzonalizados.png"
+              alt="Servicio 2"
+              class="card-imagen"
+            />
+            <h3 class="card-titulo">Diseños personalizados</h3>
+            <p class="card-descripcion">Diseños adaptados a tus necesidades.</p>
+          </a>
+
+          <!-- CARD SERVICIO 3 -->
+          <a href="Marketing.html" class="card-servicio">
+            <img
+              src="Multimediaindex/Publicidadymarketing.png"
+              alt="Servicio 3"
+              class="card-imagen"
+            />
+            <h3 class="card-titulo">Publicidad y Marketing</h3>
+            <p class="card-descripcion">
+              Estrategias para promocionar negocios.
+            </p>
+          </a>
+
+          <!-- CARD SERVICIO 4 -->
+          <a href="Playeras.html" class="card-servicio">
+            <img
+              src="Multimediaindex/Playerassublimadas.png"
+              alt="Servicio 4"
+              class="card-imagen"
+            />
+            <h3 class="card-titulo">Playeras personalizadas</h3>
+            <p class="card-descripcion">
+              Elaboración de playeras personalizadas.
+            </p>
+          </a>
+
+          <!-- CARD SERVICIO 5 -->
+          <a href="Paginas.html" class="card-servicio">
+            <img
+              src="Multimediaindex/Paginasweb.png"
+              alt="Servicio 5"
+              class="card-imagen"
+            />
+            <h3 class="card-titulo">Páginas web</h3>
+            <p class="card-descripcion">Sitios web personalizados.</p>
+          </a>
+
+          <!-- CARD SERVICIO 6 -->
+          <a href="Cursos.html" class="card-servicio">
+            <img
+              src="Multimediaindex/Cursosdigitales.png"
+              alt="Servicio 6"
+              class="card-imagen"
+            />
+            <h3 class="card-titulo">Cursos digitales</h3>
+            <p class="card-descripcion">
+              Aprende en línea, dónde y cuándo quieras.
+            </p>
+          </a>
+        </div>
+        <!-- FIN GRID DE SERVICIOS -->
+
+        <!-- INICIO CARRUSEL BANNER -->
+        <section class="banner-container">
+          <div
+            class="banner-slide active"
+            style="background-image: url(Multimediaindex/Banner1.jpg)"
+          ></div>
+          <div
+            class="banner-slide"
+            style="background-image: url(Multimediaindex/Banner2.jpg)"
+          ></div>
+        </section>
+        <!-- FIN CARRUSEL BANNER -->
+
+        <!-- BOTONES DEBAJO DEL BANNER -->
+        <div class="botones-container">
+          <a href="Botswhats.html" class="boton boton-bots">
+            <span class="boton-icono">🤖</span>
+            <span>Ir a Bots WhatsApp</span>
+          </a>
+          <a
+            href="https://wa.me/524791449771"
+            target="_blank"
+            class="boton boton-whatsapp"
+          >
+            <span class="boton-icono">📱</span>
+            <span>Contáctame</span>
+          </a>
+        </div>
+
+        <!-- INICIO VIDEO -->
+        <section class="video-container">
+          <div class="video-responsive">
+            <iframe
+              class="video-block"
+              src="https://www.youtube.com/embed/8_dwAbOvHZw?autoplay=1&mute=1&loop=1&playlist=8_dwAbOvHZw&controls=0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </section>
+        <!-- FIN VIDEO -->
+        <!-- FIN VIDEO -->
+      </main>
+      <!-- FIN MAIN -->
+
+      <!-- INICIO FOOTER -->
+      <footer class="footer-principal">
+        &copy; 2024 INNOTECHNOLOGY. Todos los derechos reservados.
+      </footer>
+      <!-- FIN FOOTER -->
+    </div>
+    <!-- FIN CONTENEDOR PRINCIPAL -->
+
+    <script>
+      // JS ligero para rotar banners
+      const slides = document.querySelectorAll(".banner-slide");
+      let current = 0;
+      setInterval(() => {
+        slides[current].classList.remove("active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("active");
+      }, 5000);
+    </script>
+  </body>
+</html>
