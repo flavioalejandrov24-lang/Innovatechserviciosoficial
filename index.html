@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- INICIO CONTENEDOR PRINCIPAL -->
     <div class="contenedor-principal">
-      <!-- INICIO HEADER -->
+
+      <!-- HEADER -->
       <header
         class="header-principal"
         style="
@@ -17,127 +17,105 @@
           background-size: cover;
           background-position: center;
         "
-      >
-        <!-- ➡️ Sustituir Multimediaindex/header.png por tu imagen local del header -->
-      </header>
-      <!-- FIN HEADER -->
+      ></header>
 
-      <!-- INICIO MAIN -->
+      <!-- BOTONES DE SERVICIOS DEBAJO DEL HEADER -->
+      <nav class="nav-servicios">
+        <a href="Servicios.html" class="nav-btn">Servicio 1</a>
+        <a href="Diseños.html"   class="nav-btn">Servicio 2</a>
+        <a href="Marketing.html" class="nav-btn">Servicio 3</a>
+        <a href="Playeras.html"  class="nav-btn">Servicio 4</a>
+        <a href="Paginas.html"   class="nav-btn">Servicio 5</a>
+        <a href="Cursos.html"    class="nav-btn">Servicio 6</a>
+      </nav>
+
+      <!-- MAIN -->
       <main class="main-content">
-        <!-- INICIO TÍTULO PRINCIPAL -->
+
+        <!-- TÍTULO -->
         <div class="titulo-seccion">
           <h2 class="titulo-servicios">NUESTROS SERVICIOS</h2>
         </div>
-        <!-- FIN TÍTULO PRINCIPAL -->
 
-        <!-- INICIO GRID DE SERVICIOS -->
+        <!-- GRID DE SERVICIOS -->
         <div class="grid-servicios">
-          <!-- CARD SERVICIO 1 -->
+
           <a href="Servicios.html" class="card-servicio">
-            <img
-              src="Multimediaindex/Reparacionespc.png"
-              alt="Servicio 1"
-              class="card-imagen"
-            />
-            <h3 class="card-titulo">Reparación de equipos de cómputo</h3>
-            <p class="card-descripcion">
-              Servicios integrales de reparación para computadoras.
-            </p>
+            <div class="card-inner">
+              <div class="card-mirror"></div>
+              <img src="Multimediaindex/Reparacionespc.png"        alt="Servicio 1" class="card-imagen" loading="lazy" />
+              <h3 class="card-titulo">Reparación de equipos de cómputo</h3>
+              <p class="card-descripcion">Servicios integrales de reparación para computadoras.</p>
+            </div>
           </a>
 
-          <!-- CARD SERVICIO 2 -->
           <a href="Diseños.html" class="card-servicio">
-            <img
-              src="Multimediaindex/Diseñosperzonalizados.png"
-              alt="Servicio 2"
-              class="card-imagen"
-            />
-            <h3 class="card-titulo">Diseños personalizados</h3>
-            <p class="card-descripcion">Diseños adaptados a tus necesidades.</p>
+            <div class="card-inner">
+              <div class="card-mirror"></div>
+              <img src="Multimediaindex/Diseñosperzonalizados.png" alt="Servicio 2" class="card-imagen" loading="lazy" />
+              <h3 class="card-titulo">Diseños personalizados</h3>
+              <p class="card-descripcion">Diseños adaptados a tus necesidades.</p>
+            </div>
           </a>
 
-          <!-- CARD SERVICIO 3 -->
           <a href="Marketing.html" class="card-servicio">
-            <img
-              src="Multimediaindex/Publicidadymarketing.png"
-              alt="Servicio 3"
-              class="card-imagen"
-            />
-            <h3 class="card-titulo">Publicidad y Marketing</h3>
-            <p class="card-descripcion">
-              Estrategias para promocionar negocios.
-            </p>
+            <div class="card-inner">
+              <div class="card-mirror"></div>
+              <img src="Multimediaindex/Publicidadymarketing.png"  alt="Servicio 3" class="card-imagen" loading="lazy" />
+              <h3 class="card-titulo">Publicidad y Marketing</h3>
+              <p class="card-descripcion">Estrategias para promocionar negocios.</p>
+            </div>
           </a>
 
-          <!-- CARD SERVICIO 4 -->
           <a href="Playeras.html" class="card-servicio">
-            <img
-              src="Multimediaindex/Playerassublimadas.png"
-              alt="Servicio 4"
-              class="card-imagen"
-            />
-            <h3 class="card-titulo">Playeras personalizadas</h3>
-            <p class="card-descripcion">
-              Elaboración de playeras personalizadas.
-            </p>
+            <div class="card-inner">
+              <div class="card-mirror"></div>
+              <img src="Multimediaindex/Playerassublimadas.png"    alt="Servicio 4" class="card-imagen" loading="lazy" />
+              <h3 class="card-titulo">Playeras personalizadas</h3>
+              <p class="card-descripcion">Elaboración de playeras personalizadas.</p>
+            </div>
           </a>
 
-          <!-- CARD SERVICIO 5 -->
           <a href="Paginas.html" class="card-servicio">
-            <img
-              src="Multimediaindex/Paginasweb.png"
-              alt="Servicio 5"
-              class="card-imagen"
-            />
-            <h3 class="card-titulo">Páginas web</h3>
-            <p class="card-descripcion">Sitios web personalizados.</p>
+            <div class="card-inner">
+              <div class="card-mirror"></div>
+              <img src="Multimediaindex/Paginasweb.png"            alt="Servicio 5" class="card-imagen" loading="lazy" />
+              <h3 class="card-titulo">Páginas web</h3>
+              <p class="card-descripcion">Sitios web personalizados.</p>
+            </div>
           </a>
 
-          <!-- CARD SERVICIO 6 -->
           <a href="Cursos.html" class="card-servicio">
-            <img
-              src="Multimediaindex/Cursosdigitales.png"
-              alt="Servicio 6"
-              class="card-imagen"
-            />
-            <h3 class="card-titulo">Cursos digitales</h3>
-            <p class="card-descripcion">
-              Aprende en línea, dónde y cuándo quieras.
-            </p>
+            <div class="card-inner">
+              <div class="card-mirror"></div>
+              <img src="Multimediaindex/Cursosdigitales.png"       alt="Servicio 6" class="card-imagen" loading="lazy" />
+              <h3 class="card-titulo">Cursos digitales</h3>
+              <p class="card-descripcion">Aprende en línea, dónde y cuándo quieras.</p>
+            </div>
           </a>
+
         </div>
-        <!-- FIN GRID DE SERVICIOS -->
+        <!-- FIN GRID -->
 
-        <!-- INICIO CARRUSEL BANNER -->
+        <!-- CARRUSEL BANNER -->
         <section class="banner-container">
-          <div
-            class="banner-slide active"
-            style="background-image: url(Multimediaindex/Banner1.jpg)"
-          ></div>
-          <div
-            class="banner-slide"
-            style="background-image: url(Multimediaindex/Banner2.jpg)"
-          ></div>
+          <div class="banner-slide active" style="background-image: url(Multimediaindex/Banner1.jpg)"></div>
+          <div class="banner-slide"        style="background-image: url(Multimediaindex/Banner2.jpg)"></div>
         </section>
-        <!-- FIN CARRUSEL BANNER -->
 
-        <!-- BOTONES DEBAJO DEL BANNER -->
+        <!-- BOTONES BANNER -->
         <div class="botones-container">
           <a href="Botswhats.html" class="boton boton-bots">
             <span class="boton-icono">🤖</span>
             <span>Ir a Bots WhatsApp</span>
           </a>
-          <a
-            href="https://wa.me/524791449771"
-            target="_blank"
-            class="boton boton-whatsapp"
-          >
+          <a href="https://wa.me/524791449771" target="_blank" class="boton boton-whatsapp">
             <span class="boton-icono">📱</span>
             <span>Contáctame</span>
           </a>
         </div>
 
-        <!-- INICIO VIDEO -->
+        <!-- VIDEO -->
         <section class="video-container">
           <div class="video-responsive">
             <iframe
@@ -146,25 +124,23 @@
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
+              loading="lazy"
               referrerpolicy="strict-origin-when-cross-origin"
             ></iframe>
           </div>
         </section>
-        <!-- FIN VIDEO -->
-        <!-- FIN VIDEO -->
-      </main>
-      <!-- FIN MAIN -->
 
-      <!-- INICIO FOOTER -->
+      </main>
+
+      <!-- FOOTER -->
       <footer class="footer-principal">
         &copy; 2024 INNOTECHNOLOGY. Todos los derechos reservados.
       </footer>
-      <!-- FIN FOOTER -->
+
     </div>
-    <!-- FIN CONTENEDOR PRINCIPAL -->
 
     <script>
-      // JS ligero para rotar banners
+      // Carrusel banner
       const slides = document.querySelectorAll(".banner-slide");
       let current = 0;
       setInterval(() => {
@@ -172,6 +148,18 @@
         current = (current + 1) % slides.length;
         slides[current].classList.add("active");
       }, 5000);
+
+      // Animación de entrada de cards al hacer scroll
+      const cards = document.querySelectorAll(".card-servicio");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      cards.forEach(c => observer.observe(c));
     </script>
   </body>
 </html>
