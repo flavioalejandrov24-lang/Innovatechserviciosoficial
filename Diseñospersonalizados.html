@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseños Personalizados – Innotechnology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="diseñospersonalizados.css" />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="site-header"></header>
+
+    <!-- NAV -->
+    <nav class="nav-servicios">
+      <a href="serviciosreparacion.html" class="nav-btn">Reparaciones</a>
+      <a href="Diseñospersonalizados.html" class="nav-btn active">Diseños</a>
+      <a href="Publicidadymarketing.html"  class="nav-btn">Publicidad</a>
+      <a href="Sublidadoplayeras.html"     class="nav-btn">Sublimado</a>
+      <a href="Páginasweb.html"            class="nav-btn">Páginas web</a>
+      <a href="Cursosdigitales.html"       class="nav-btn">Cursos</a>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <p class="breadcrumb">
+      <a href="index.html">Inicio</a>
+      <span>›</span>
+      Diseños personalizados
+    </p>
+
+    <!-- HERO -->
+    <section class="hero fade-in">
+      <div class="hero-texto">
+        <span class="hero-badge">Diseño Creativo</span>
+        <h1 class="hero-titulo">Diseños<br />personalizados</h1>
+        <p class="hero-subtitulo">
+          Creamos identidades visuales únicas para tu marca o negocio.
+          Logos, flyers, tarjetas y más — con estilo, impacto y entrega rápida.
+        </p>
+      </div>
+      <div class="hero-foto-wrap">
+        <img
+          src="imagenessegmentodiseños/iniciodiseños.png"
+          alt="Diseños personalizados Innotechnology"
+          loading="lazy"
+          onerror="this.style.display='none'; this.parentNode.querySelector('.hero-foto-placeholder').style.display='flex';"
+        />
+        <div class="hero-foto-placeholder" style="display:none;">
+          <span class="icono-placeholder">🎨</span>
+          <span>Agrega tu foto aquí:<br /><code>imagenessegmentodiseños/iniciodiseños.png</code></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPOS DE DISEÑO -->
+    <div class="divisor">
+      <div class="divisor-linea"></div>
+      <h2 class="divisor-titulo">✏️ ¿Qué necesitas?</h2>
+      <div class="divisor-linea"></div>
+    </div>
+
+    <div class="tipos-grid">
+
+      <div class="tipo-card" onclick="toggleTipo(this)">
+        <div class="tc-icon-wrap">🏷️</div>
+        <div class="tc-info">
+          <div class="tc-nombre">Logo e identidad visual</div>
+          <div class="tc-desc">Logotipo, paleta de color y tipografía para tu marca.</div>
+        </div>
+        <div class="tc-check">✓</div>
+      </div>
+
+      <div class="tipo-card" onclick="toggleTipo(this)">
+        <div class="tc-icon-wrap">📄</div>
+        <div class="tc-info">
+          <div class="tc-nombre">Flyers y carteles</div>
+          <div class="tc-desc">Diseños para impresión digital o física.</div>
+        </div>
+        <div class="tc-check">✓</div>
+      </div>
+
+      <div class="tipo-card" onclick="toggleTipo(this)">
+        <div class="tc-icon-wrap">💳</div>
+        <div class="tc-info">
+          <div class="tc-nombre">Tarjetas de presentación</div>
+          <div class="tc-desc">Diseño profesional listo para imprimir.</div>
+        </div>
+        <div class="tc-check">✓</div>
+      </div>
+
+      <div class="tipo-card" onclick="toggleTipo(this)">
+        <div class="tc-icon-wrap">📱</div>
+        <div class="tc-info">
+          <div class="tc-nombre">Redes sociales</div>
+          <div class="tc-desc">Posts, stories y portadas para todas las plataformas.</div>
+        </div>
+        <div class="tc-check">✓</div>
+      </div>
+
+      <div class="tipo-card" onclick="toggleTipo(this)">
+        <div class="tc-icon-wrap">🖼️</div>
+        <div class="tc-info">
+          <div class="tc-nombre">Banners digitales</div>
+          <div class="tc-desc">Anuncios y banners para web o publicidad en línea.</div>
+        </div>
+        <div class="tc-check">✓</div>
+      </div>
+
+    </div>
+    <!-- FIN TIPOS -->
+
+    <!-- SELECTOR DE ESTILO -->
+    <div class="divisor" style="margin-top:2.5rem;">
+      <div class="divisor-linea"></div>
+      <h2 class="divisor-titulo">🎭 Elige tu estilo</h2>
+      <div class="divisor-linea"></div>
+    </div>
+
+    <div class="estilos-wrap">
+      <div class="estilos-grid">
+
+        <div class="estilo-btn" onclick="selEstilo(this,'Minimalista','Limpio, con mucho espacio en blanco y tipografía clara. Ideal para marcas modernas, tech o de lujo discreta.')">
+          <div class="eb-icon">◻️</div>
+          <div class="eb-nombre">Minimalista</div>
+          <div class="eb-desc">Simple, limpio, elegante</div>
+        </div>
+
+        <div class="estilo-btn" onclick="selEstilo(this,'Moderno','Colores vibrantes, formas geométricas y composición dinámica. Perfecto para negocios jóvenes y digitales.')">
+          <div class="eb-icon">⚡</div>
+          <div class="eb-nombre">Moderno</div>
+          <div class="eb-desc">Dinámico, geométrico, impactante</div>
+        </div>
+
+        <div class="estilo-btn" onclick="selEstilo(this,'Vintage','Texturas, tonos cálidos y tipografías retro. Excelente para tiendas, restaurantes o marcas con historia.')">
+          <div class="eb-icon">📻</div>
+          <div class="eb-nombre">Vintage</div>
+          <div class="eb-desc">Retro, cálido, nostálgico</div>
+        </div>
+
+        <div class="estilo-btn" onclick="selEstilo(this,'Bold / Audaz','Tipografía grande, colores fuertes y alto contraste. Para marcas que quieren ser vistas y recordadas.')">
+          <div class="eb-icon">🔥</div>
+          <div class="eb-nombre">Bold / Audaz</div>
+          <div class="eb-desc">Fuerte, llamativo, memorable</div>
+        </div>
+
+        <div class="estilo-btn" onclick="selEstilo(this,'Ilustrativo','Íconos y elementos dibujados a mano o vectorizados. Ideal para marcas creativas, infantiles o artesanales.')">
+          <div class="eb-icon">🖌️</div>
+          <div class="eb-nombre">Ilustrativo</div>
+          <div class="eb-desc">Artístico, orgánico, creativo</div>
+        </div>
+
+        <div class="estilo-btn" onclick="selEstilo(this,'Corporativo','Diseño formal, estructura clara y colores neutros o institucionales. Ideal para empresas, despachos y negocios profesionales.')">
+          <div class="eb-icon">🏢</div>
+          <div class="eb-nombre">Corporativo</div>
+          <div class="eb-desc">Formal, confiable, profesional</div>
+        </div>
+
+      </div>
+
+      <div class="preview-estilo">
+        <div class="pe-label">Vista previa del estilo</div>
+        <p class="pe-texto" id="previewTexto">Selecciona un estilo para ver su descripción y orientar mejor tu diseño.</p>
+      </div>
+    </div>
+    <!-- FIN ESTILOS -->
+
+    <!-- FORMULARIO DE COTIZACIÓN -->
+    <div class="divisor" style="margin-top:2.5rem;">
+      <div class="divisor-linea"></div>
+      <h2 class="divisor-titulo">📋 Cotiza tu diseño</h2>
+      <div class="divisor-linea"></div>
+    </div>
+
+    <div class="form-wrap">
+      <div class="form-card">
+
+        <div class="presupuesto-tag">
+          💡 Cuéntanos tu idea — respondemos en menos de 24 h
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Nombre o empresa</label>
+            <input type="text" class="form-control" placeholder="Ej. Papelería Rojas" id="fNombre" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">WhatsApp o correo</label>
+            <input type="text" class="form-control" placeholder="Para enviarte la cotización" id="fContacto" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Describe tu idea o proyecto</label>
+          <textarea
+            class="form-control"
+            id="fIdea"
+            maxlength="600"
+            placeholder="Ej: Quiero un logo para mi negocio de repostería. Colores rosa y dorado, algo elegante pero moderno..."
+            oninput="updateChar()"
+          ></textarea>
+          <div class="char-count"><span id="charCount">0</span> / 600 caracteres</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">¿Tienes referencia o ejemplo?</label>
+          <input type="text" class="form-control" placeholder="Pega un link o describe un diseño que te guste" id="fReferencia" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">¿Con qué urgencia lo necesitas?</label>
+          <div class="urgencia-wrap">
+            <button class="urgencia-btn" onclick="selUrgencia(this)">Sin prisa (1–2 semanas)</button>
+            <button class="urgencia-btn" onclick="selUrgencia(this)">Normal (3–5 días)</button>
+            <button class="urgencia-btn" onclick="selUrgencia(this)">Urgente (24–48 h)</button>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn-wa" onclick="enviarWA()">📱 Enviar por WhatsApp</button>
+          <button class="btn-enviar" onclick="enviarForm()">Solicitar cotización →</button>
+        </div>
+
+      </div>
+    </div>
+    <!-- FIN FORMULARIO -->
+
+    <!-- PROCESO -->
+    <div class="divisor" style="margin-top:2.5rem;">
+      <div class="divisor-linea"></div>
+      <h2 class="divisor-titulo">⭐ ¿Cómo trabajamos?</h2>
+      <div class="divisor-linea"></div>
+    </div>
+
+    <div class="proceso-grid">
+      <div class="proceso-card">
+        <div class="pc-icon">📝</div>
+        <div class="pc-nombre">1. Nos cuentas tu idea</div>
+        <div class="pc-desc">Llena el formulario con los detalles de tu proyecto.</div>
+      </div>
+      <div class="proceso-card">
+        <div class="pc-icon">💬</div>
+        <div class="pc-nombre">2. Te enviamos propuesta</div>
+        <div class="pc-desc">Recibe cotización y boceto inicial en 24 h.</div>
+      </div>
+      <div class="proceso-card">
+        <div class="pc-icon">✏️</div>
+        <div class="pc-nombre">3. Revisamos juntos</div>
+        <div class="pc-desc">Ajustes hasta que quede perfecto.</div>
+      </div>
+      <div class="proceso-card">
+        <div class="pc-icon">🚀</div>
+        <div class="pc-nombre">4. Entregamos archivos</div>
+        <div class="pc-desc">Todos los formatos listos para usar.</div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-principal">
+      &copy; 2024 INNOTECHNOLOGY. Todos los derechos reservados.
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <script>
+      // Scroll observer — cards, estilos, proceso, fade-in
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.tipo-card, .estilo-btn, .proceso-card, .fade-in')
+        .forEach(el => observer.observe(el));
+
+      // Selección de tipo de diseño
+      function toggleTipo(card) {
+        card.classList.toggle('selected');
+        const sel = [...document.querySelectorAll('.tipo-card.selected')]
+          .map(c => c.querySelector('.tc-nombre').textContent).join(', ');
+        const ta = document.getElementById('fIdea');
+        if (sel && !ta.value) {
+          ta.placeholder = 'Cuéntanos tu idea para: ' + sel + '...';
+        } else if (!sel) {
+          ta.placeholder = 'Ej: Quiero un logo para mi negocio de repostería...';
+        }
+      }
+
+      // Selección de estilo
+      function selEstilo(btn, nombre, desc) {
+        document.querySelectorAll('.estilo-btn').forEach(b => b.classList.remove('sel'));
+        btn.classList.add('sel');
+        document.getElementById('previewTexto').textContent = '🎨 ' + nombre + ': ' + desc;
+      }
+
+      // Selección de urgencia
+      function selUrgencia(btn) {
+        document.querySelectorAll('.urgencia-btn').forEach(b => b.classList.remove('sel'));
+        btn.classList.add('sel');
+      }
+
+      // Contador de caracteres
+      function updateChar() {
+        document.getElementById('charCount').textContent =
+          document.getElementById('fIdea').value.length;
+      }
+
+      // Recopilar datos del formulario
+      function getResumen() {
+        return {
+          tipos:    [...document.querySelectorAll('.tipo-card.selected')]
+                    .map(c => c.querySelector('.tc-nombre').textContent).join(', ') || 'No especificado',
+          estilo:   document.querySelector('.estilo-btn.sel')?.querySelector('.eb-nombre')?.textContent || 'No especificado',
+          urgencia: document.querySelector('.urgencia-btn.sel')?.textContent || 'No especificado',
+          nombre:   document.getElementById('fNombre').value || '',
+          contacto: document.getElementById('fContacto').value || '',
+          idea:     document.getElementById('fIdea').value || '',
+          ref:      document.getElementById('fReferencia').value || ''
+        };
+      }
+
+      // Enviar por WhatsApp
+      function enviarWA() {
+        const r = getResumen();
+        const msg = encodeURIComponent(
+          `Hola! Quiero cotizar un diseño:\n\n` +
+          `*Nombre/Empresa:* ${r.nombre}\n` +
+          `*Tipo:* ${r.tipos}\n` +
+          `*Estilo:* ${r.estilo}\n` +
+          `*Urgencia:* ${r.urgencia}\n` +
+          `*Idea:* ${r.idea}\n` +
+          `*Referencia:* ${r.ref}\n` +
+          `*Contacto:* ${r.contacto}`
+        );
+        window.open('https://wa.me/524791449771?text=' + msg, '_blank');
+      }
+
+      // Enviar formulario
+      function enviarForm() {
+        const r = getResumen();
+        const t = document.getElementById('toast');
+        if (!r.nombre || !r.idea) {
+          t.textContent = '⚠️ Completa nombre e idea antes de enviar.';
+        } else {
+          t.textContent = '✅ ¡Solicitud enviada! Te contactamos pronto.';
+        }
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 3500);
+      }
+    </script>
+
+  </body>
+</html>
