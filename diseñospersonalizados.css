@@ -437,6 +437,7 @@ body {
   padding: 1.1rem 1.4rem;
   backdrop-filter: blur(4px);
   transition: all 0.3s;
+  text-align: center;
 }
 
 .pe-label {
@@ -452,6 +453,8 @@ body {
   font-size: 0.88rem;
   color: #475569;
   line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* ===========================
@@ -527,8 +530,9 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 }
 
 .presupuesto-tag {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(96, 165, 250, 0.10));
   border: 1px solid rgba(37, 99, 235, 0.22);
@@ -538,6 +542,7 @@ textarea.form-control { resize: vertical; min-height: 120px; }
   color: var(--az2);
   font-weight: 700;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .urgencia-wrap { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.3rem; }
@@ -565,7 +570,7 @@ textarea.form-control { resize: vertical; min-height: 120px; }
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 1.2rem;
 }
 
