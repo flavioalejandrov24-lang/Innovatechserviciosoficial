@@ -102,30 +102,18 @@ img { display:block; max-width:100%; }
 .divisor-linea { flex:1; height:2px; background:linear-gradient(to right,transparent,var(--az3),transparent); }
 .divisor-titulo { font-family:'Rajdhani',sans-serif; font-size:1.5rem; font-weight:700; color:var(--az1); white-space:nowrap; }
 
-/* ── QUÉ ES DTF — texto puro ── */
+/* ── QUÉ ES DTF — texto limpio sobre el fondo ── */
 .dtf-texto-wrap {
-  max-width:1100px; margin:2rem auto 0; padding:0 1.2rem;
-}
-.dtf-texto-card {
-  border-radius:var(--radio); padding:1.8rem 2rem;
-  background:linear-gradient(135deg,rgba(30,58,138,0.10) 0%,rgba(255,255,255,0.75) 55%,rgba(96,165,250,0.08) 100%);
-  border:1px solid rgba(59,130,246,0.2); backdrop-filter:blur(6px);
-  position:relative; overflow:hidden;
+  max-width:780px; margin:1.8rem auto 0; padding:0 1.4rem;
   opacity:0; transform:translateY(20px);
-  transition:opacity 0.5s ease,transform 0.5s ease;
+  transition:opacity 0.5s ease, transform 0.5s ease;
 }
-.dtf-texto-card.visible { opacity:1; transform:translateY(0); }
-.dtf-texto-card::before {
-  content:''; position:absolute; top:-60%; left:-75%; width:55%; height:200%;
-  background:linear-gradient(105deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.42) 50%,rgba(255,255,255,0) 100%);
-  transform:skewX(-15deg); pointer-events:none;
-  animation:mirrorT 7s ease-in-out infinite;
-}
-@keyframes mirrorT { 0%{left:-75%;opacity:0;}8%{opacity:1;}52%{left:130%;opacity:1;}58%{opacity:0;}100%{left:130%;opacity:0;} }
+.dtf-texto-wrap.visible { opacity:1; transform:translateY(0); }
+.dtf-texto-card { /* contenedor neutro sin estilos visuales */ }
 
-.dtf-parrafos { display:flex; flex-direction:column; gap:0.85rem; position:relative; z-index:1; }
+.dtf-parrafos { display:flex; flex-direction:column; gap:0.85rem; }
 .dtf-parrafos p {
-  font-size:0.92rem; color:#334155; line-height:1.75;
+  font-size:0.97rem; color:#334155; line-height:1.78;
   text-align:justify;
 }
 .dtf-parrafos strong { color:var(--az1); font-weight:800; }
@@ -302,23 +290,23 @@ select.form-control { cursor:pointer; }
   flex:1; display:flex; flex-direction:column;
   align-items:center; justify-content:center; gap:0.2rem;
   padding:0.8rem 0.5rem; border-radius:10px; cursor:pointer;
-  border:1.5px solid rgba(59,130,246,0.22);
-  background:linear-gradient(135deg,rgba(255,255,255,0.65),rgba(219,234,254,0.45));
+  border:1.5px solid rgba(148,163,184,0.35);
+  background:linear-gradient(160deg,#ffffff 0%,#f1f5f9 60%,#e2e8f0 100%);
   transition:all 0.22s; position:relative; overflow:hidden; text-align:center;
 }
 .opcion-cantidad input[type="radio"] { display:none; }
-.opcion-cantidad .cq-label { font-size:0.9rem; font-weight:800; color:#334155; position:relative; z-index:1; }
-.opcion-cantidad .cq-sub   { font-size:0.68rem; color:#64748b; position:relative; z-index:1; }
+.opcion-cantidad .cq-label { font-size:0.9rem; font-weight:800; color:#475569; position:relative; z-index:1; }
+.opcion-cantidad .cq-sub   { font-size:0.68rem; color:#94a3b8; position:relative; z-index:1; }
 .opcion-cantidad.checked {
-  background:linear-gradient(135deg,var(--az1) 0%,var(--az2) 60%,rgba(255,255,255,0.18) 100%);
-  border-color:var(--az2);
-  box-shadow:0 4px 14px rgba(30,58,138,0.25), inset 0 1px 0 rgba(255,255,255,0.20);
+  background:linear-gradient(160deg,#f8fafc 0%,#e2e8f0 55%,#cbd5e1 100%);
+  border:2px solid #94a3b8;
+  box-shadow:0 4px 14px rgba(100,116,139,0.20), inset 0 1px 0 rgba(255,255,255,0.80);
 }
-.opcion-cantidad.checked .cq-label { color:#fff; }
-.opcion-cantidad.checked .cq-sub   { color:rgba(255,255,255,0.70); }
+.opcion-cantidad.checked .cq-label { color:#1e293b; }
+.opcion-cantidad.checked .cq-sub   { color:#64748b; }
 .opcion-cantidad.checked::before {
   content:''; position:absolute; top:-60%; left:-75%; width:55%; height:200%;
-  background:linear-gradient(105deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.28) 50%,rgba(255,255,255,0) 100%);
+  background:linear-gradient(105deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.55) 50%,rgba(255,255,255,0) 100%);
   transform:skewX(-15deg); pointer-events:none;
   animation:mirrorOp 3s ease-in-out infinite;
 }
@@ -333,11 +321,11 @@ select.form-control { cursor:pointer; }
 }
 .nota-cantidad strong { color:var(--az1); font-weight:800; }
 
-/* CALCULADORA */
+/* CALCULADORA — integrada al formulario, sin sub-card */
 .calculadora {
-  margin:1.4rem 0 1.2rem; border-radius:var(--radio); padding:1.5rem;
-  background:linear-gradient(135deg,rgba(30,58,138,0.11) 0%,rgba(37,99,235,0.07) 55%,rgba(96,165,250,0.06) 100%);
-  border:1px solid rgba(59,130,246,0.22); text-align:center;
+  margin:0.6rem 0 1.2rem; text-align:center;
+  padding:1rem 0 0.5rem;
+  border-top:1px solid rgba(59,130,246,0.15);
 }
 .calc-label { font-size:0.75rem; font-weight:700; color:#64748b; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.4rem; }
 .calc-precio {

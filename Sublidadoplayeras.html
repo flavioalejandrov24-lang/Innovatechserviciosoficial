@@ -258,7 +258,7 @@
     const obs = new IntersectionObserver((entries) => {
       entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
     }, { threshold: 0.12 });
-    document.querySelectorAll('.dtf-texto-card,.caract-card,.proceso-card,.fade-in')
+    document.querySelectorAll('.dtf-texto-wrap,.caract-card,.proceso-card,.fade-in')
       .forEach(el => obs.observe(el));
 
     const PRECIOS = { blanca: 350, negra: 420 };
