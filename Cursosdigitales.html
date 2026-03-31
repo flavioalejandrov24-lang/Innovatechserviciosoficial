@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cursos Digitales – Innotechnology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="Cursosdigitales.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header"></header>
+
+  <!-- NAV -->
+  <nav class="nav-servicios">
+    <a href="serviciosreparacion.html"   class="nav-btn">Reparaciones</a>
+    <a href="Diseñospersonalizados.html" class="nav-btn">Diseños</a>
+    <a href="Publicidadymarketing.html"  class="nav-btn">Publicidad</a>
+    <a href="Sublidadoplayeras.html"     class="nav-btn">Sublimado</a>
+    <a href="Páginasweb.html"            class="nav-btn">Páginas web</a>
+    <a href="Cursosdigitales.html"       class="nav-btn active">Cursos</a>
+  </nav>
+
+  <p class="breadcrumb">
+    <a href="index.html">Inicio</a><span>›</span>Cursos digitales
+  </p>
+
+  <!-- BADGE + TÍTULO -->
+  <div class="hero-top">
+    <span class="hero-badge">Formación Digital</span>
+    <h1 class="hero-titulo">Cursos<br/>digitales</h1>
+  </div>
+
+  <!-- IMAGEN PRINCIPAL -->
+  <div class="hero-img-wrap">
+    <div class="hero-img-inner">
+      <img
+        src="imagenessegmentocursos/iniciocursos.png"
+        alt="Cursos digitales Innotechnology"
+        loading="lazy"
+        onerror="this.style.display='none'; this.parentNode.querySelector('.hero-foto-placeholder').style.display='flex';"
+      />
+      <div class="hero-foto-placeholder" style="display:none;">
+        <span class="ip-icon">🎓</span>
+        <span>Agrega tu foto:<br/><code>imagenessegmentocursos/iniciocursos.png</code></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESCRIPCIÓN -->
+  <div class="descripcion-wrap">
+    <p>
+      En <strong>Innotechnology</strong> ofrecemos cursos digitales prácticos y accesibles
+      para que aprendas desde cero o mejores tus habilidades en tecnología, diseño y negocios en línea.
+      Cada curso está diseñado con contenido claro, ejemplos reales y acompañamiento directo —
+      para que puedas avanzar a tu propio ritmo desde cualquier dispositivo.
+    </p>
+  </div>
+
+  <!-- CURSOS -->
+  <div class="divisor">
+    <div class="divisor-linea"></div>
+    <h2 class="divisor-titulo">🎓 Cursos disponibles</h2>
+    <div class="divisor-linea"></div>
+  </div>
+
+  <div class="cursos-grid">
+
+    <!-- CURSO 1 -->
+    <div class="curso-card">
+      <span class="curso-etiqueta">Idiomas</span>
+      <div class="curso-img-wrap">
+        <div class="curso-img-inner">
+          <img
+            src="imagenessegmentocursos/curso1.png"
+            alt="El mundo de inglés de Disney"
+            loading="lazy"
+            onerror="this.style.display='none'; this.parentNode.querySelector('.curso-img-placeholder').style.display='flex';"
+          />
+          <div class="curso-img-placeholder" style="display:none;">
+            <span class="ph-icon">🖼️</span>
+            <span>Imagen del curso</span>
+            <code>imagenessegmentocursos/curso1.png</code>
+          </div>
+        </div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-precio">$89.99 <span class="curso-precio-unidad">MXN</span></div>
+        <div class="curso-titulo">El mundo de inglés de Disney</div>
+        <div class="curso-desc">Programa educativo diseñado para que los niños aprendan inglés de forma natural y divertida.</div>
+      </div>
+    </div>
+
+    <!-- CURSO 2 -->
+    <div class="curso-card">
+      <span class="curso-etiqueta">Idiomas</span>
+      <div class="curso-img-wrap">
+        <div class="curso-img-inner">
+          <img
+            src="imagenessegmentocursos/curso2.png"
+            alt="Inglés sin Barreras"
+            loading="lazy"
+            onerror="this.style.display='none'; this.parentNode.querySelector('.curso-img-placeholder').style.display='flex';"
+          />
+          <div class="curso-img-placeholder" style="display:none;">
+            <span class="ph-icon">🖼️</span>
+            <span>Imagen del curso</span>
+            <code>imagenessegmentocursos/curso2.png</code>
+          </div>
+        </div>
+      </div>
+      <div class="curso-body">
+        <div class="curso-precio">$89.99 <span class="curso-precio-unidad">MXN</span></div>
+        <div class="curso-titulo">Inglés sin Barreras</div>
+        <div class="curso-desc">Programa educativo para hispanohablantes que buscan aprender inglés desde nivel básico hasta profesional.</div>
+      </div>
+    </div>
+
+  </div>
+  <!-- FIN CURSOS -->
+
+  <!-- CTA -->
+  <div class="cta-final">
+    <div class="cta-titulo">¿Tienes dudas sobre algún curso?</div>
+    <p class="cta-sub">Escríbenos y con gusto te orientamos sobre cuál se adapta mejor a lo que buscas.</p>
+    <button class="btn-wa-grande"
+      onclick="window.open('https://wa.me/524791449771?text='+encodeURIComponent('Hola! Me interesan los cursos digitales de Innotechnology. ¿Me pueden dar más información?'),'_blank')">
+      📱 Escríbenos por WhatsApp
+    </button>
+  </div>
+
+  <footer>&copy; 2024 INNOTECHNOLOGY. Todos los derechos reservados.</footer>
+
+  <script>
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(
+      '.hero-top, .hero-img-wrap, .descripcion-wrap, .curso-card, .cta-final, .fade-in'
+    ).forEach(el => obs.observe(el));
+
+    function inscribirWA(curso) {
+      const msg = encodeURIComponent(
+        `Hola! Me interesa el *${curso}* de Innotechnology.\n¿Me pueden dar más información sobre el contenido y el precio?`
+      );
+      window.open('https://wa.me/524791449771?text=' + msg, '_blank');
+    }
+  </script>
+
+</body>
+</html>
